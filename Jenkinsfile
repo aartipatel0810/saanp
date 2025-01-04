@@ -1,12 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Git Checkout') {
-            steps {
-                git url: 'https://github.com/rchidana/calcwebapp.git'    
-		            echo "Code Checked-out Successfully!!";
-            }
-        }
+        
         
         stage('Package') {
             steps {
@@ -33,7 +28,7 @@ pipeline {
             steps {
 		// Change this as per your Jenkins Configuration
                 withSonarQubeEnv('SonarQube') {
-                    bat 'mvn package sonar:sonar'
+                    bat 'mvn package sonar:sonar  -Dsonar.projectKey=Test-Scan -Dsonar.projectName="Test-Scan" -Dsonar.host.url=http://localhost:9000'
                 }
             }
         }
