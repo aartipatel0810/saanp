@@ -16,8 +16,7 @@
 	</properties>
 	<properties>
     <sonar.host.url>http;/localhost:9000 </sonar.host.url> 
-    <sonar.login></sonar.login> <sonar.password></sonar.password> <sonar.token>sqp_d06ea011aa19500432dd6e0024ee8ec42041bfc3
-</sonar.token> 
+     <sonar.token>sqp_d06ea011aa19500432dd6e0024ee8ec42041bfc3 </sonar.token> 
 </properties>
 
 	<dependencies>
