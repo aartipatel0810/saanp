@@ -13,11 +13,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
-	</properties>
-	<properties>
-    <sonar.host.url>http;/localhost:9000 </sonar.host.url> 
-     <sonar.token>sqp_d06ea011aa19500432dd6e0024ee8ec42041bfc3 </sonar.token> 
+		
+  <sonar.host.url>http://localhost:9000 </sonar.host.url>
+    <sonar.login>admin</sonar.login> 
+	<sonar.password>Aarti08@patel</sonar.password> 
+	
 </properties>
+	
 
 	<dependencies>
 		<dependency>
@@ -84,7 +86,6 @@
 				<artifactId>sonar-maven-plugin</artifactId>
 				<version>3.7.0.1746</version>
 			      </plugin>
-
 
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
