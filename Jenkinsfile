@@ -22,7 +22,7 @@ pipeline {
             steps {
 		// Change this as per your Jenkins Configuration
                 withSonarQubeEnv('server-sonarqube') {
-                    bat 'mvn package sonar:sonar  -Dsonar.projectKey=Team10 -Dsonar.projectName="Team10" -Dsonar.host.url=http://localhost:9000'
+                    bat 'mvn package sonar:sonar  -Dsonar.projectKey=Test-Scan -Dsonar.projectName="Test-Scan" -Dsonar.host.url=http://localhost:9000'
                 }
             }
         }
