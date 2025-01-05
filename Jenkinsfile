@@ -21,7 +21,7 @@ pipeline {
 	stage('SonarQube analysis') {
             steps {
 		// Change this as per your Jenkins Configuration
-                withSonarQubeEnv('qube') {
+                withSonarQubeEnv('server-sonarqube') {
                     bat 'mvn package sonar:sonar  -Dsonar.projectKey=Test-Scan -Dsonar.projectName="Test-Scan" -Dsonar.host.url=http://localhost:9000'
                 }
             }
